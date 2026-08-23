@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TagAlong AI</title>
+    <title>TagAlong AI - Success</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <h1>🤖 TagAlong AI</h1>
 
-        <h1>🤖 TagAlong AI</h1>
+    <h2>✅ Item Added Successfully!</h2>
 
-        <h2>✅ Item Added Successfully</h2>
+    <p id="items"></p>
 
-        <p id="addedItems"></p>
+    <h3>🔔 Delivery Partner</h3>
 
-        <hr>
+    <p>
+        Notification sent to the delivery partner.
+    </p>
 
-        <h3>🔔 Delivery Partner Notification</h3>
-
-        <p>
-            Your delivery partner has been notified.
-        </p>
-
-        <p>
-            📦 Order #TA1025
-        </p>
-
-        <p>
-            🚚 Delivery partner will be alerted about the additional item.
-        </p>
-
-    </div>
+    <p>
+        🚚 Order #TA1025 has been updated.
+    </p>
 
     <script>
-        let items = localStorage.getItem("forgottenItems");
+        let item = localStorage.getItem("forgottenItems");
 
-        document.getElementById("addedItems").innerText =
-            "Added item: " + items;
+        document.getElementById("items").innerText =
+            "Added item: " + item;
     </script>
 
 </body>
