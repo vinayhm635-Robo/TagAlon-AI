@@ -10,20 +10,21 @@
     <h1>🤖 TagAlong AI</h1>
 
     <h3>Order #TA1025</h3>
-    <p>🚚 Your order is out for delivery delivered in 15min</p>
+
+    <p>🚚 Your order is out for delivery</p>
 
     <h3>What did you forget?</h3>
 
-    <input 
-        type="text" 
-        placeholder="Example: I forgot milk,bread"
+    <input
+        type="text"
+        id="itemInput"
+        placeholder="Example: I forgot milk and bread"
     >
 
     <br><br>
 
-    <button onclick="addItems()">Add Items</button>
+    <button id="addButton">Add Items</button>
 
-    <script src="script.js"></script>
     <hr>
 
     <h3>🤖 TagAlong Assistant</h3>
@@ -31,6 +32,8 @@
     <p>
         Tell me what you would like to add to your current order.
     </p>
-    
+
+    <script src="script.js"></script>
+
 </body>
 </html>
