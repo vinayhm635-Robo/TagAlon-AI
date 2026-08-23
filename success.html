@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Items Added - TagAlong AI</title>
+    <title>TagAlong AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,17 +11,25 @@
 
         <h1>🤖 TagAlong AI</h1>
 
-        <h2>✅ Items Added Successfully!</h2>
+        <h2>✅ Item Added Successfully</h2>
 
         <p id="addedItems"></p>
 
-        <p>🛒 Your items have been added to the current order.</p>
+        <hr>
 
-        <p>📦 Order #TA1025 is still out for delivery.</p>
+        <h3>🔔 Delivery Partner Notification</h3>
 
-        <br>
+        <p>
+            Your delivery partner has been notified.
+        </p>
 
-        <button onclick="goBack()">Add More Items</button>
+        <p>
+            📦 Order #TA1025
+        </p>
+
+        <p>
+            🚚 Delivery partner will be alerted about the additional item.
+        </p>
 
     </div>
 
@@ -29,11 +37,7 @@
         let items = localStorage.getItem("forgottenItems");
 
         document.getElementById("addedItems").innerText =
-            "Added items: " + items;
-
-        function goBack() {
-            window.location.href = "index.html";
-        }
+            "Added item: " + items;
     </script>
 
 </body>
