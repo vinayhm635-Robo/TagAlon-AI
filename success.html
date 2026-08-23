@@ -22,6 +22,15 @@
     <p>
         🚚 Order #TA1025 has been updated.
     </p>
+    <br>
+
+    <button onclick="goToPayment()">💳 Pay for Additional Items</button>
+
+    <script>
+    function goToPayment() {
+        window.location.href = "payment.html";
+    }
+    <./script>
 
     <script>
         let item = localStorage.getItem("forgottenItems");
