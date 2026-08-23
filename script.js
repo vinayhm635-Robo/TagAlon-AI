@@ -9,6 +9,6 @@ document.getElementById("addButton").addEventListener("click", function () {
 
     localStorage.setItem("forgottenItems", item);
 
-    window.location.href = "success.html";
+    window.location.href = "processing.html";
 
 });
