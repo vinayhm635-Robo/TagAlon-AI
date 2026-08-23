@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items Added - TagAlong AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 TagAlong AI</h1>
+
+        <h2>✅ Items Added Successfully!</h2>
+
+        <p id="addedItems"></p>
+
+        <p>🛒 Your items have been added to the current order.</p>
+
+        <p>📦 Order #TA1025 is still out for delivery.</p>
+
+        <br>
+
+        <button onclick="goBack()">Add More Items</button>
+
+    </div>
+
+    <script>
+        let items = localStorage.getItem("forgottenItems");
+
+        document.getElementById("addedItems").innerText =
+            "Added items: " + items;
+
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
