@@ -1,45 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TagAlong AI - Success</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>🤖 TagAlong AI</h1>
+    <div class="container">
 
-    <h2>✅ Item Added Successfully!</h2>
+        <h1>🤖 TagAlong AI</h1>
 
-    <p id="items"></p>
+        <h2>✅ Item Added Successfully!</h2>
 
-    <h3>🔔 Delivery Partner</h3>
+        <p id="addedItems"></p>
 
-    <p>
-        Notification sent to the delivery partner.
-    </p>
+        <hr>
 
-    <p>
-        🚚 Order #TA1025 has been updated.
-    </p>
-    <br>
+        <h3>📦 Order #TA1025</h3>
 
-   <a href="payment.html">
-    <button>💳 Pay for Additional Items</button>
-   </a>
+        <p>
+            Your additional items have been added to your current order.
+        </p>
+
+        <h3>🔔 Delivery Partner</h3>
+
+        <p>
+            The delivery partner has been notified about the additional items.
+        </p>
+
+        <br>
+
+        <button onclick="goToPayment()">
+            💳 Pay for Additional Items
+        </button>
+
+    </div>
 
     <script>
-    function goToPayment() {
-        window.location.href = "payment.html";
-    }
-    <./script>
 
-    <script>
-        let item = localStorage.getItem("forgottenItems");
+        // Get the items entered by the customer
+        let items = localStorage.getItem("forgottenItems");
 
-        document.getElementById("items").innerText =
-            "Added item: " + item;
+        if (items) {
+            document.getElementById("addedItems").innerText =
+                "Added items: " + items;
+        } else {
+            document.getElementById("addedItems").innerText =
+                "Additional items added to your order.";
+        }
+
+        // Open payment page
+        function goToPayment() {
+            window.location.href = "payment.html";
+        }
+
     </script>
 
 </body>
+
 </html>
